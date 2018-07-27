@@ -1,13 +1,13 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <li> burgers</li>
+    <div class="row align-items-center mt-5 mb-5 ">
+        <div class="col-md-3 bg-light mr-5 ml-5 mb-5 p-3">
+            <h5>burgers</h5>
             {{#each data}} 
             {{#unless devoured}}
             <li>
                 {{burger_name}}
-                <button class="change-devoured" data-id="{{id}}">
-                    Devoured
+                <button class="change-devoured bg-dark text-light ml-2 " data-id="{{id}}">
+                    Devoured it !
                 </button>
             </li>
             {{/unless}}
@@ -15,13 +15,13 @@
 
           
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 bg-light mr-5 mb-5 p-4">
             <form action="/index" method="POST">
                 <textarea type="text" name="name"></textarea>
-                <button type="submit">Submit</button>
+                <button type="submit" class="bg-dark text-light">Submit</button>
             </form>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 bg-light mb-5 p-3">
 
             {{#each data}} 
             {{#if devoured}}

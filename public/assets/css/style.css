@@ -1,0 +1,48 @@
+body {
+
+    background-image: url('/assets/css/burgers.jpg' );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center; 
+    height: 100%;
+   
+}
+.title{
+   font-family: fantasy;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+p{
+	
+	font-size: 15px;
+	font-weight: bold;
+	
+	
+}
+.header{
+    background: #faebd7;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
