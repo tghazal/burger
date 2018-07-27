@@ -3,7 +3,7 @@ var burger=require("../models/burger")
 var router =express.Router();
 
 
-router.get("/index",function(req,res){
+router.get("/",function(req,res){
 burger.all(function(result){
     res.render("index",{data:result})
 })
@@ -15,7 +15,7 @@ router.post("/index",function(req,res){
 burgerName=bugerToEat.name;
 //burgerDevoured=bugerToEat.devoured;
     burger.insert(burgerName,"false",function(result){
-         res.redirect("/index");   
+         res.redirect("/");   
     })
  
 })
